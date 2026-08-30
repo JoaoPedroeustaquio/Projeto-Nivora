@@ -133,7 +133,7 @@ export default function Login() {
           <div className="mb-8 text-center">
             <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center">
               <img
-                src="./public/Logo_nivora_N.svg"
+                src="./public/logo_nivora_N.svg"
                 alt="NIVORA"
                 className="h-full w-full object-contain"
               />

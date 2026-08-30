@@ -40,7 +40,7 @@ export default function Header() {
             "
           >
             <img
-              src="./public/Logo_nivora_N.svg"
+              src="./public/logo_nivora_N.svg"
               alt="NIVORA"
               className="h-full w-full object-contain"
             />
