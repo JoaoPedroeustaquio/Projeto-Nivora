@@ -129,11 +129,11 @@ export default function Login() {
     <main className="flex min-h-screen items-center justify-center bg-(--background) px-4 py-8">
       <div className="w-full max-w-md">
         <div className="rounded-2xl border border-(--card-border) bg-(--card) p-6 shadow-2xl sm:p-8">
-          {/* Logo */}
+          {/* Logo e identidade */}
           <div className="mb-8 text-center">
             <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center">
               <img
-                src="./public/logo_nivora_N.svg"
+                src="/logo_nivora_N.svg"
                 alt="NIVORA"
                 className="h-full w-full object-contain"
               />
@@ -143,7 +143,7 @@ export default function Login() {
               NIVORA
             </h1>
 
-            <p className="mt-2 text-sm text-(--muted)">
+            <p className="mt-2 text-sm font-medium text-(--primary)">
               Clareza para o seu dinheiro.
             </p>
 
@@ -154,14 +154,14 @@ export default function Login() {
             </p>
           </div>
 
-          {/* Erro */}
+          {/* Mensagem de erro */}
           {error && (
             <div className="mb-4 rounded-xl border border-red-900/50 bg-red-950/40 px-4 py-3 text-sm text-red-400">
               {error}
             </div>
           )}
 
-          {/* Sucesso */}
+          {/* Mensagem de sucesso */}
           {message && (
             <div className="mb-4 rounded-xl border border-green-900/50 bg-green-950/40 px-4 py-3 text-sm text-green-400">
               {message}
@@ -335,6 +335,7 @@ export default function Login() {
               </div>
             )}
 
+            {/* Botão principal */}
             <Button
               type="submit"
               className="
@@ -353,7 +354,7 @@ export default function Login() {
             </Button>
           </form>
 
-          {/* Troca de modo */}
+          {/* Troca entre login e cadastro */}
           <div className="mt-6 text-center text-sm text-(--muted)">
             {mode === "login" ? (
               <>
